@@ -49,6 +49,6 @@ class DB{
 	}
 }
 
-$db = new DB();
+$db = new DB('localhost', 'oat_web', 'admin', 'admin');
 
 ?>

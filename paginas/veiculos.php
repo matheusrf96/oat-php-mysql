@@ -26,7 +26,6 @@
 					<option value="maior"> Maior Preço </option>						
 				</select>
 			</td>
-
 		</tr>
 	</table>
 
@@ -35,4 +34,22 @@
 <div name="itens">
 	<h1>Os itens aqui</h1>
 	
+	<?php
+		$sql = "SELECT * FROM veiculo ";
+		$db->query($sql);
+
+		$result = $db->resultSet();
+
+		foreach ($result as $item) {
+			echo "
+				ID: ".$item['id']."<br />
+				Nome: ".$item['nome']."<br />
+				Descrição: ".$item['descricao']."<br />
+				Foto: ".$item['foto']."<br />
+				Valor: R$".$item['valor']."<br />
+				Tipo: ".$item['tipo']."<br />
+				<br />
+			";
+		} 
+	?>
 </div>

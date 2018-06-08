@@ -8,7 +8,7 @@ class Veiculo{
     private $valor;
     private $tipo;
 
-    public function __construct($nome, $descricao, $valor, $tipo){
+    public function __construct($nome, $descricao, $foto, $valor, $tipo){
         if(strlen($nome) >= 45){
             $this->nome = substr($nome, 0, 41)."...";
         }
@@ -23,7 +23,7 @@ class Veiculo{
             $this->descricao = $descricao;
         }
 
-        $this->foto = "../default.jpg";
+        $this->foto = "img/default.jpg";
 
         if($valor < 0.0){
             $this->valor = 0.0;

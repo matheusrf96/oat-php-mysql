@@ -7,11 +7,10 @@ require_once("config/conexao_bd.php");
 
 if(isset($_GET["pg"])){
     $pg = $_GET["pg"];
-  }
-  else{
-    $pg = "inicio";
- }
-
+}
+else{
+	$pg = "inicio";
+}
 
 ?>
 
@@ -32,6 +31,7 @@ if(isset($_GET["pg"])){
 				<a href="?pg=sobre">Sobre</a>
 				<a href="?pg=veiculos">Veiculos</a>
 				<a href="?pg=contato">Contato</a>
+				<a href="?pg=cadastro">Cadastrar Veículo</a>
 			</nav>
 		</div>
 
