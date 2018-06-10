@@ -15,8 +15,9 @@ else{
 	<form method="POST" action="?pg=filtrar">
 		<div class="row">
 			<div class="col-6 from-group">
-				<input type="text" name="busca" class="form-control" placeholder="O que você esta procurando?" value="">		
+				<input type="text" name="busca" class="form-control search-box" placeholder="O que você esta procurando?" value="">		
 			</div>
+			<div id="result"></div>
 
 			<div class="col">
 				<select name="categoria" class="form-control" id="categoria">

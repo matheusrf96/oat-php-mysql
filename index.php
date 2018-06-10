@@ -22,6 +22,8 @@ else{
 	<link rel="icon" href="img/icon.jpg" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
 	<link rel="stylesheet" href="assets/css/style.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="assets/js/main.js"></script>
 </head>
 <body class="container">
 	<header>
