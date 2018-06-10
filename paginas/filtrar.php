@@ -7,12 +7,21 @@ if(isset($_POST['fazBusca'])){
 	$categoria = $_POST['categoria'];
     $preco = $_POST['preco'];
     
-    $busca = " nome LIKE '%".$busca."%'";
-    $filtroAux = $busca;
+    if($busca != ""){
+        $busca = "WHERE nome LIKE '%".$busca."%'";
+        $filtroAux = $busca;
+    }
+    else{
+        $filtroAux = "";
+        $busca = "";
+    }
 
     $cat = "";
-    if($filtroAux != ""){
-        $cat = " AND ";
+    if($filtroAux != "" && $categoria != ""){
+        $cat = " AND";
+    }
+    else{
+        $cat = " WHERE ";
     }
 
     if($categoria == "carro"){
@@ -20,6 +29,9 @@ if(isset($_POST['fazBusca'])){
     }
     elseif($categoria == "moto"){
         $cat .= " tipo = 'M'";
+    }
+    else{
+        $cat .= "TRUE";
     }
 
     $filtroAux .= $cat;

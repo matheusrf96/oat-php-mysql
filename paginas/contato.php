@@ -62,7 +62,7 @@
 				<tr>
 					<td></td>
 					<td>
-						<input type="submit" name="enviar" id="enviar" value="Enviar contato">
+						<input type="submit" name="enviar" class="btn btn-success" id="enviar" value="Enviar contato">
 					</td>				
 				</tr>
 

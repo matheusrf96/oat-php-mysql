@@ -18,23 +18,36 @@ else{
 <html lang="pt-br">
 <head>
 	<title>Compre seu carro</title>
-	<link rel="icon" href="img/icon.jpg">
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
+	<link rel="icon" href="img/icon.jpg" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
-<body class="text-center" >
+<body class="container">
 	<header>
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="index.php">Compre seu Carro</a>
 
-		<h1>Compre Seu Carro</h1>
-		<div class="divMenu" name="menu" >
-			<nav>
-				<a href="?pg=inicio">Home</a>
-				<a href="?pg=sobre">Sobre</a>
-				<a href="?pg=veiculos">Veiculos</a>
-				<a href="?pg=contato">Contato</a>
-				<a href="?pg=cadastro">Cadastrar Veículo</a>
-			</nav>
+		<div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="?pg=inicio">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="?pg=veiculos&filtro=">Veiculos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="?pg=cadastro">Cadastrar Veículo</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="?pg=contato">Contato</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="?pg=sobre">Sobre</a>
+				</li>
+			</ul>
 		</div>
-
+		</nav>
 	</header>
 
 	<main>
@@ -43,9 +56,9 @@ else{
 		</div>
 	</main>
 
-	<footer>
-		<div class="inner">
-          <p>Template for <a href="">Jeferson Maciel</a>.</p>
+	<footer class="footer rodape">
+		<div class="container">
+          <p class="text-white">&copy;2018. Jeferson Maciel e Matheus Rodrigues.</p>
         </div>
 	</footer>
 
