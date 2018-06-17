@@ -23,7 +23,12 @@ class Veiculo{
             $this->descricao = $descricao;
         }
 
-        $this->foto = "img/default.jpg";
+        if($foto == ""){
+            $this->foto = "img/default.jpg";
+        }
+        else{
+            $this->foto = $foto;
+        }
 
         if($valor < 0.0){
             $this->valor = 0.0;

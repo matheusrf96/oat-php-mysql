@@ -1,4 +1,4 @@
-<form action="?pg=processar_contato" method="POST" id="contato" class="form">
+<form action="?pg=processar_contato" method="POST" id="contato" class="form" enctype="multipart/form-data">
 
 			<table border="0">
 				<tr>
@@ -55,7 +55,7 @@
 					<td>Anexo:</td>
 					<td>
 						<p>Se necessario é possivel enviar uma foto ou documento para o vendedor!</p>
-						<input type="file" id="anexo" name="anexo">
+						<input type="file" id="idAnexo" name="anexo">
 					</td>				
 				</tr>
 

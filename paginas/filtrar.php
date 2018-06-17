@@ -6,10 +6,12 @@ if(isset($_POST['fazBusca'])){
 	$busca = $_POST['busca'];
 	$categoria = $_POST['categoria'];
     $preco = $_POST['preco'];
+    $where = FALSE;
     
     if($busca != ""){
         $busca = "WHERE nome LIKE '%".$busca."%'";
         $filtroAux = $busca;
+        $where = TRUE;
     }
     else{
         $filtroAux = "";
@@ -17,8 +19,8 @@ if(isset($_POST['fazBusca'])){
     }
 
     $cat = "";
-    if($filtroAux != "" && $categoria != ""){
-        $cat = " AND";
+    if($where == TRUE){
+        $cat = " AND ";
     }
     else{
         $cat = " WHERE ";

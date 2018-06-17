@@ -1,4 +1,4 @@
-<form action="?pg=processar_cadastro" method="POST" id="cadastro" class="form">
+<form action="?pg=processar_cadastro" method="POST" id="cadastro" class="form" enctype="multipart/form-data">
     <div class="form-group">
         <label for="nome">Modelo: </label>
         <input type="text" name="nome" class="form-control" id="nome" required />
@@ -11,7 +11,7 @@
 
     <div class="form-group">
         <label for="foto">Foto: </label>
-        <input type="file" name="foto" class="form-control" id="foto" />
+        <input type="file" name="foto" class="form-control" id="idFoto" />
     </div>
 
     <div class="form-group">

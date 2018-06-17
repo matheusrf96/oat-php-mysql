@@ -57,12 +57,11 @@ else{
 			echo "
 				<div class='col-4 sub-caixa'>
 					<div class='caixa-item'>
-						ID: ".$item['id']."<br />
+						<img src='img/veiculos/".$item['foto']."' width='340' height='250'/><br/>
+						Identificador: ".$item['id']."<br />
 						Nome: ".$item['nome']."<br />
 						Descrição: ".$item['descricao']."<br />
-						Foto: ".$item['foto']."<br />
 						Valor: R$".$item['valor']."<br />
-						Tipo: ".$item['tipo']."<br />
 					</div>
 				</div>
 			";
